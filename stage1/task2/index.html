@@ -60,13 +60,13 @@
 			<h2>最后一篇文章一级标题</h2>
 			<h3>文章二级标题</h3>
 			<span>文章作者</span><span>发表时间</span>
-			<ol>
+			<ol class="rank-list">
 				<li>排名1</li>
 				<li>排名2</li>
 				<li>排名3</li>
 			</ol>
-			<p>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
-			<table border="1">
+			<p class="table-tip">下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</p>
+			<table border="1" class="table">
 				<thead>
 					<tr>
 						<th>表头</th>
@@ -90,7 +90,7 @@
 						<td>表格内容单元格</td>
 						<td>操作</td>
 					</tr>
-					<tr>
+					<tr class="table-total">
 						<td>总计</td>
 						<td colspan="2">1000</td>
 					</tr>
@@ -98,39 +98,54 @@
 			</table>
 		</article>
 		<aside>
-			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-			<h2>侧栏注册窗口标题</h2>
+			<h4>这里以后是一个侧栏，这是侧栏的标题</h4>
+			<!-- <h2>侧栏注册窗口标题</h2> -->
 			<form>
-				<label for="email">请输入邮箱地址：</label>
-				<input type="text" name="email" />
-				<p>邮箱地址请按要求格式输入</p>
+				<div class="input-wrap">
+					<label for="email">请输入邮箱地址</label>
+					<input type="text" name="email" />
+					<p>邮箱地址请按要求格式输入</p>
+				</div>
 
-				<label for="password">请输入密码：</label>
-				<input type="password" name="password" />
-				<label for="password">请重复输入密码：</label>
-				<input type="password" name="password" />
-				<p>密码为6-16位英文数字</p>
+				<div class="input-wrap">
+					<label for="password">请输入密码</label>
+					<input type="password" name="password" />
+				</div>
 
-				<label>性别：</label>
-				<input type="radio" checked="checked" name="sex" value="male" />男
-				<input type="radio" name="sex" value="female">女
+				<div class="input-wrap">
+					<label for="password">请重复输入密码</label>
+					<input type="password" name="password" />
+					<p>密码为6-16位英文数字</p>
+				</div>
 
-				<label>城市：</label>
-				<select>
-					<option value="北京">北京</option>
-					<option value="上海">上海</option>
-					<option value="广州">广州</option>
-				</select>
+				<div>
+					<label>性别</label>
+					<input type="radio" checked="checked" name="sex" value="male" />男
+					<input type="radio" name="sex" value="female">女
+				</div>
 
-				<label>爱好：</label>
-				<input type="checkbox" value="yundong" />运动
-				<input type="checkbox" value="yishu" />艺术
-				<input type="checkbox" value="kexue" />科学
+				<div>
+					<label>城市</label>
+					<select>
+						<option value="北京">北京</option>
+						<option value="上海">上海</option>
+						<option value="广州">广州</option>
+					</select>
+				</div>
 
-				<label>个人描述</label>
-				<textarea></textarea>
+				<div>
+					<label>爱好</label>
+					<input type="checkbox" value="yundong" />运动
+					<input type="checkbox" value="yishu" />艺术
+					<input type="checkbox" value="kexue" />科学
+				</div>
 
-				<input type="submit" value="确认提交" />
+				<div>
+					<label>个人描述</label>
+					<textarea></textarea>
+				</div>
+
+				<input type="submit" value="确认提交" class="submit" />
 			</form>
 		</aside>
 
