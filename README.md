@@ -2,7 +2,7 @@
 
 ##第一阶段 stage1
 
-*(点击查看Demo)
+(点击查看Demo)
 
 * [任务一：零基础HTML编码](http://hhking.github.io/ife2016/stage1/task1/index.html)
 * [任务二：零基础HTML及CSS编码（一）](http://hhking.github.io/ife2016/stage1/task2/index.html)
